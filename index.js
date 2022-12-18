@@ -14,6 +14,7 @@ let countEl = document.getElementById("count-el");
 function increment(){
     count = count + 1;
     countEl.textContent=count;
+
 }
 
 function decrement(){
@@ -22,7 +23,10 @@ function decrement(){
 }
 
 let saveEl = document.getElementById("save-el")
-function save(){
+ function save(){
     let saveCount = count + " - "
-    saveEl.textContent += saveCount;
+    saveEl.textContent += saveCount
+    countEl.textContent = 0;
+    count = 0;
+    
 }
